@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result - AI Disease Prediction System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-blue-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-blue-600">AI Disease Prediction</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="/predict" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Check Symptoms</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto py-12 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-center mb-8 text-gray-900">Prediction Result</h1>
+            
+            <div class="text-center mb-8">
+                <div class="text-6xl mb-4">🩺</div>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Predicted Disease:</h2>
+                <p class="text-3xl font-bold text-blue-600 mb-4"></p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg mb-6">
+                    <h3 class="text-lg font-semibold mb-2">Confidence Score</h3>
+                    <div class="text-2xl font-bold text-green-600">%</div>
+                </div>
+                
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
+                    <h3 class="text-lg font-semibold text-yellow-800 mb-2">Recommended Next Steps</h3>
+                    <p class="text-yellow-700">Please consult with a healthcare professional for accurate diagnosis and treatment. This prediction is based on the symptoms you provided and is for informational purposes only.</p>
+                </div>
+                
+                <div class="bg-red-100 border-l-4 border-red-500 p-4">
+                    <h3 class="text-lg font-semibold text-red-800 mb-2">Medical Disclaimer</h3>
+                    <p class="text-red-700">This system is for educational purposes only and not a replacement for professional medical advice. Always seek the advice of qualified health providers with questions you may have regarding a medical condition.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="/predict" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 mr-4">Check Again</a>
+                <a href="/" class="bg-gray-600 text-white px-6 py-2 rounded-md hover:bg-gray-700">Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 AI Disease Prediction System. For educational purposes only.</p>
+            <p class="mt-2 text-sm">Not a replacement for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

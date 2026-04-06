@@ -1,0 +1,11 @@
+symptom1,symptom2,symptom3,symptom4,symptom5,symptom6,symptom7,symptom8,disease
+1,0,1,0,1,0,0,0,Common Cold
+0,1,0,1,0,1,1,0,Pneumonia
+1,1,1,1,1,1,0,1,Flu
+0,0,1,1,0,0,1,1,Migraine
+1,0,0,0,1,1,0,0,Gastroenteritis
+0,1,1,0,0,0,1,1,Heart Disease
+1,1,0,1,1,0,0,1,Diabetes
+0,0,1,0,1,1,1,0,Asthma
+1,0,1,1,0,0,0,1,Allergy
+0,1,0,0,1,1,0,0,Anemia

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Prediction - AI Disease Prediction System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-blue-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-blue-600">AI Disease Prediction</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="/predict" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Check Symptoms</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto py-12 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-center mb-8 text-gray-900">Check Your Symptoms</h1>
+            
+            <form method="POST" class="space-y-6" id="symptom-form">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="fever" name="fever" value="1" class="mr-3">
+                        <label for="fever" class="text-gray-700">Fever</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cough" name="cough" value="1" class="mr-3">
+                        <label for="cough" class="text-gray-700">Cough</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="headache" name="headache" value="1" class="mr-3">
+                        <label for="headache" class="text-gray-700">Headache</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="fatigue" name="fatigue" value="1" class="mr-3">
+                        <label for="fatigue" class="text-gray-700">Fatigue</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="nausea" name="nausea" value="1" class="mr-3">
+                        <label for="nausea" class="text-gray-700">Nausea</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="vomiting" name="vomiting" value="1" class="mr-3">
+                        <label for="vomiting" class="text-gray-700">Vomiting</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="chest_pain" name="chest_pain" value="1" class="mr-3">
+                        <label for="chest_pain" class="text-gray-700">Chest Pain</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="shortness_breath" name="shortness_breath" value="1" class="mr-3">
+                        <label for="shortness_breath" class="text-gray-700">Shortness of Breath</label>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300" id="predict-btn">
+                        Predict Disease
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 AI Disease Prediction System. For educational purposes only.</p>
+            <p class="mt-2 text-sm">Not a replacement for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

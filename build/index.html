@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Disease Prediction System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-blue-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-blue-600">AI Disease Prediction</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="/predict" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Check Symptoms</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-12 px-4">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">AI Disease Prediction System</h1>
+            <p class="text-xl text-gray-600 mb-8">Advanced healthcare AI for symptom-based disease prediction</p>
+            <a href="/predict" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300">Check Your Symptoms</a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 text-3xl mb-4">🩺</div>
+                <h3 class="text-xl font-semibold mb-2">About the System</h3>
+                <p class="text-gray-600">Our AI system uses machine learning to analyze symptoms and predict potential diseases based on medical data.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 text-3xl mb-4">🤖</div>
+                <h3 class="text-xl font-semibold mb-2">How It Works</h3>
+                <p class="text-gray-600">Select your symptoms from our comprehensive list, and our AI model will provide predictions with confidence scores.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 text-3xl mb-4">⚕️</div>
+                <h3 class="text-xl font-semibold mb-2">AI in Healthcare</h3>
+                <p class="text-gray-600">Leveraging artificial intelligence to assist healthcare professionals and provide early disease detection.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Benefits of AI in Healthcare</h2>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Early disease detection and prevention</li>
+                <li>Personalized healthcare recommendations</li>
+                <li>Reduced diagnostic time and costs</li>
+                <li>Improved patient outcomes through data-driven insights</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 AI Disease Prediction System. For educational purposes only.</p>
+            <p class="mt-2 text-sm">Not a replacement for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
